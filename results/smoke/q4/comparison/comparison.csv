@@ -1,7 +1,0 @@
-run,variant,profile,learning_rate,min_lr,parameters,updates,best_val_loss,best_step,final_val_loss,delta_best_vs_first_run
-homework1/results/smoke/q4/baseline,baseline,smoke,0.001,0.0001,8928,3,4.178180456161499,3,4.178180456161499,0.0
-homework1/results/smoke/q4/rmsnorm,rmsnorm,smoke,0.001,0.0001,8928,3,4.17646861076355,3,4.17646861076355,-0.0017118453979492188
-homework1/results/smoke/q4/swiglu,swiglu,smoke,0.001,0.0001,8928,3,4.182098865509033,3,4.182098865509033,0.00391840934753418
-homework1/results/smoke/q4/nope,nope,smoke,0.001,0.0001,8544,3,4.159279823303223,3,4.159279823303223,-0.018900632858276367
-homework1/results/smoke/q4/rope,rope,smoke,0.001,0.0001,8544,3,4.1592793464660645,3,4.1592793464660645,-0.01890110969543457
-homework1/results/smoke/q4/gqa,gqa,smoke,0.001,0.0001,8352,3,4.172780990600586,3,4.172780990600586,-0.005399465560913086

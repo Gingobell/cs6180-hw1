@@ -34,9 +34,6 @@ def lr_at(index, peak, total, warmup):
 
 
 def run(args):
-    # set_device requires an explicit ordinal; "cuda" means the current device.
-    if args.device == 'cuda':
-        args.device = 'cuda:0'
     if args.profile == 'formal' and not args.device.startswith('cuda'):
         raise ValueError('Formal runs require a verified CUDA device; use --profile smoke for local checks.')
     if args.device.startswith('cuda') and not torch.cuda.is_available():

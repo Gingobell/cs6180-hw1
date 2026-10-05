@@ -1,0 +1,49 @@
+{
+  "profile": "formal",
+  "variant": "gqa",
+  "seed": 1337,
+  "data_seed": 1338,
+  "dropout_seed": 1339,
+  "optimizer_updates": 5000,
+  "batch_size": 64,
+  "eval_interval": 250,
+  "eval_iters": 200,
+  "learning_rate": 0.001,
+  "min_lr": 0.0001,
+  "warmup_iters": 100,
+  "weight_decay": 0.1,
+  "betas": [
+    0.9,
+    0.99
+  ],
+  "grad_clip": 1.0,
+  "model": {
+    "variant": "gqa",
+    "block_size": 256,
+    "vocab_size": 65,
+    "n_layer": 6,
+    "n_head": 6,
+    "n_embd": 384,
+    "dropout": 0.2,
+    "bias": false
+  },
+  "dtype": "float32",
+  "device": "cuda:0",
+  "hardware": "Tesla V100-SXM2-32GB",
+  "torch_version": "2.5.1",
+  "cuda_version": "12.1",
+  "compile": false,
+  "tf32": true,
+  "data_sha256": {
+    "train.bin": "6ec305602a99ac2802745a134e1f5e33e2231b4855525b00b9aebb730ac2626f",
+    "val.bin": "d37d30cc0c8327c270d493299c3dca54135f6d5f1c9ef60cda78076e311204b1",
+    "input.txt": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed"
+  },
+  "parameters": 9860352,
+  "upstream_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+  "code_sha256": {
+    "model_variants.py": "13c0d5f6f3bef4c255e8f7a55e8f435dbffd23f946da92f59ec937bc91f6cc5c",
+    "model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "run_experiment.py": "417d63885c4a46fe535f4cd31143bba2f09317dad62428b9c9821649c4faa9cf"
+  }
+}

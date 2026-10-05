@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "profile": "formal",
+  "updates": 5000,
+  "best_val_loss": 1.4818116784095765,
+  "best_step": 1250,
+  "final_val_loss": 1.8683883881568908,
+  "final_train_loss": 0.5156689521670341,
+  "train_sample_sha256": "46c4440b7cb9d9887da180de48a7cd3cfc8ccc3f44a380370f35712a7e11110c",
+  "seconds": 915.5459399465472
+}
