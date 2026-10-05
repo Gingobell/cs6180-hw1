@@ -1,0 +1,52 @@
+{
+  "status": "implemented_local_checks_passed_formal_runs_pending",
+  "shared": {
+    "seed": 1337,
+    "optimizer_updates": 5000,
+    "dataset": "shakespeare_char",
+    "n_layer": 6,
+    "n_head": 6,
+    "n_embd": 384,
+    "block_size": 256,
+    "batch_size": 64,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "min_lr": 0.0001,
+    "warmup_iters": 100,
+    "eval_interval": 250,
+    "eval_iters": 200,
+    "bias": false,
+    "weight_decay": 0.1,
+    "beta1": 0.9,
+    "beta2": 0.99,
+    "grad_clip": 1.0,
+    "compile": false,
+    "gradient_accumulation_steps": 1
+  },
+  "experiments": [
+    {
+      "name": "baseline",
+      "change": "none"
+    },
+    {
+      "name": "rmsnorm",
+      "change": "replace LayerNorm with RMSNorm"
+    },
+    {
+      "name": "swiglu",
+      "change": "replace GELU MLP with SwiGLU, hidden width 1024 to approximately match parameters"
+    },
+    {
+      "name": "nope",
+      "change": "remove learned positional embeddings"
+    },
+    {
+      "name": "rope",
+      "change": "replace learned positional embeddings with rotary Q/K encoding"
+    },
+    {
+      "name": "gqa",
+      "change": "6 query heads, 3 key/value heads; group size 2"
+    }
+  ]
+}

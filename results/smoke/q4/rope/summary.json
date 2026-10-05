@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "profile": "smoke",
+  "updates": 3,
+  "best_val_loss": 4.1592793464660645,
+  "best_step": 3,
+  "final_val_loss": 4.1592793464660645,
+  "final_train_loss": 4.170047044754028,
+  "train_sample_sha256": "6a83d7148091242bfe893d9f5f7c3eb6f9ecb43b367168faca2b6f7072076a16",
+  "seconds": 0.009129749843850732
+}
