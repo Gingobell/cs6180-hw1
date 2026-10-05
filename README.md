@@ -17,4 +17,4 @@ python scripts/plot_rope.py
 python scripts/draw_gec_architecture.py
 ```
 
-Based on [nanoGPT](https://github.com/karpathy/nanoGPT), commit `3adf61e154c3fe3fca428ad6bc3818b27a3b8291`. See `LICENSE`.
+Based on [nanoGPT](https://github.com/karpathy/nanoGPT) by Andrej Karpathy. See `LICENSE`.
