@@ -69,7 +69,7 @@ svg.append('</svg>')
 fig.savefig(OUT/'gec_architecture.png',dpi=200,facecolor='white')
 fig.savefig(OUT/'gec_architecture.pdf',facecolor='white')
 plt.close(fig)
-# Validate XML even when rsvg-convert is unavailable.
+# Check the generated SVG.
 import xml.etree.ElementTree as ET
 ET.parse(OUT/'gec_architecture.svg')
 print('Saved SVG, PNG, PDF to',OUT)
